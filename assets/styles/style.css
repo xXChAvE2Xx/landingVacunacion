@@ -60,7 +60,7 @@ nav ul li a:hover{
     color: rgb(31,62,114);
 }
 
-.top{
+.oro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,11 +85,12 @@ nav ul li a:hover{
 }
 
 .info-h{
-    font-size: 15px;
-    color: rgb(35,66,117);
-    position: absolute;
-    top: 550px;
-    margin: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(19, 54, 122);
+    margin-left:5px; 
+    margin-top: 200px;
 }
 
 .imagen-inicio{
@@ -112,19 +113,20 @@ nav ul li a:hover{
     grid-template-columns: repeat(4,1fr);
     position: relative;
     height: auto;
-    width: 800px;
+    width: 974px;
     top: 150px; left: 20%;
     background-color:rgba(245, 248, 255, 0.877);
     border-radius:10px; 
+    margin-top: -120px;
 }
 
 .horario-enviar{
     display: flex;
     align-items: center;
-    padding: 10px 40px;
+    padding: 8px 47px;
     text-align: center;
     font-weight: 500;
-    margin: 40px 30px;
+    margin: 73px 48px;
     color: rgb(255, 255, 255);
     background: rgb(56,88,214);
     border-radius: 5px;
@@ -132,4 +134,48 @@ nav ul li a:hover{
 
 .horario-enviar:hover{
     box-shadow: 2px 3px 15px -2px rgba(0,0,0,0.43);
+}
+
+.title{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(112, 112, 112);
+    margin-left: 0.4em;
+}
+
+.sub{
+    margin-left:20%; 
+    font-size:25px; 
+    font-weight: 500; 
+    color: rgb(21, 49, 92);
+}
+
+.logos-vacunas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+
+}
+
+.logos-vacunas img{
+    filter: opacity(0.20);
+    width: 172px;
+    height: 51px;
+}
+
+.logos-vacunas img:hover{
+    filter: opacity(1);
+}
+
+.icono{
+    display: inline-block;
+    color:rgb(46,77,202);
+    width: 15px;
+    z-index: 2;
+}
+
+.sombra{
+    filter: drop-shadow(0 10px 50px #4444dd);
 }
