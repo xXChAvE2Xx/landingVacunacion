@@ -2,6 +2,11 @@
     font-family: 'Roboto';
 }
 
+body{
+    margin-left: 66px;
+    margin-right: 59px;
+}
+
 ul{
     list-style: none;
 }
@@ -27,6 +32,18 @@ nav{
     padding: 10px 50px;
 }
 
+h2{
+    color: rgb(35,65,116);
+    font-size: 2em;
+    font-weight:800;
+}
+
+p{
+    color: #748198;
+    font-stretch:semi-expanded;
+    line-height: 2;
+}
+
 nav ul{
     display: flex;
 }
@@ -46,6 +63,16 @@ nav ul li a:hover{
     box-shadow: 2px 3px 15px -2px rgba(0,0,0,0.43);
 }
 
+
+.iconoMorado{
+    color: rgb(51,83,209);
+    font-size: 30px;
+}
+
+.iconoMoradoSmall{
+    color: rgb(51,83,209);
+    font-size: 15px;
+}
 .contenedor{
     width: 100%;
     min-height: 500px;
@@ -53,6 +80,11 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     margin: 50px;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo{
@@ -65,7 +97,6 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 500px;
     left: 200px;
     font-size: 13px;
 }
@@ -90,7 +121,7 @@ nav ul li a:hover{
     font-weight: 500;
     color: rgb(19, 54, 122);
     margin-left:5px; 
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .imagen-inicio{
@@ -110,10 +141,9 @@ nav ul li a:hover{
 
 .group-horario{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px [Line1] 46px [Line2];
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     position: relative;
-    height: auto;
-    width: 974px;
     top: 150px; left: 20%;
     background-color:rgba(245, 248, 255, 0.877);
     border-radius:10px; 
@@ -123,10 +153,10 @@ nav ul li a:hover{
 .horario-enviar{
     display: flex;
     align-items: center;
-    padding: 8px 47px;
+    padding: 20px 46px;
     text-align: center;
     font-weight: 500;
-    margin: 73px 48px;
+    margin: 51px 47px;
     color: rgb(255, 255, 255);
     background: rgb(56,88,214);
     border-radius: 5px;
@@ -139,24 +169,23 @@ nav ul li a:hover{
 .title{
     text-align: center;
     display: inline-block;
-    font-size: 20px;
     font-weight: 400;
     color: rgb(112, 112, 112);
-    margin-left: 0.4em;
 }
 
 .sub{
-    margin-left:20%; 
-    font-size:25px; 
+    display: flex;
     font-weight: 500; 
     color: rgb(21, 49, 92);
+    font-size: 20px;
+    justify-content: end;
 }
 
 .logos-vacunas{
     display: flex;
     justify-content: space-around;
     margin-top: 150px;
-
+    margin-bottom: 100px;
 }
 
 .logos-vacunas img{
@@ -178,4 +207,50 @@ nav ul li a:hover{
 
 .sombra{
     filter: drop-shadow(0 10px 50px #4444dd);
+}
+
+.containerWhy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.textWhy{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 30%;
+}
+
+.textWhy h2, .textWhy p{
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.razones{
+    width: 100%;
+    max-height: fit-content;
+    padding: 1% 5%;
+}
+
+.razonesBox{
+    width: 15%;
+    float: left;
+    justify-content: space-between;
+    border-color: #FAFAFF;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    margin: 1%;
+    height: 220px;
+}
+
+.razonesBox{
+    font-size: 1em;
+    margin-bottom: 10%;
+}
+
+.razonesBox:hover, .razonesBox i:hover{
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
 }
